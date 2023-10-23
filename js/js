@@ -1,0 +1,13 @@
+function main() {
+  const mensaje = "Hola Mundo";
+  const array = mensaje.split('');
+  
+  for (let i = 0; i < array.length; i++) {
+    array[i] = String.fromCharCode(array[i].charCodeAt(0) + 5);
+  }
+  
+  const encriptado = array.join('');
+  console.log(encriptado);
+}
+
+main();
